@@ -204,7 +204,9 @@ body{
   text-decoration: none;
   color: #28abad;
 }
-
+.language span{
+  margin-right: 1vw;
+}
 .project-article p a:hover {
 
   text-decoration: underline;
