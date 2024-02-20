@@ -87,7 +87,8 @@ function index() {
         <div className={style["divider-button-container"]}>
           <hr className={style["contact-divider"]} />
           <a href="#welcome-section" className={style["up-button"]}>
-            <i class="fa-solid fa-up-long">Up</i>
+            {/* <i class="fa-solid fa-up-long">Up</i> */}
+            <i className={`${style["fa-solid"]} ${style["fa-up-long"]}`}>Up</i>
           </a>
         </div>
         <div className={style.mylink}>
