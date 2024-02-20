@@ -2,7 +2,25 @@ import React, { useEffect, useState } from "react";
 import style from "../styles/Index.module.css";
 import data from "../data/data.json";
 function index() {
-  // const welcometitle = " Passionate Self-Taught Web Developer ";
+  const [activeSection, setActiveSection] = useState("");
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          setActiveSection(section.id);
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className={style["page-wrapper"]}>
       <section id="welcome-section" className={style["welcome-section"]}>
@@ -16,16 +34,20 @@ function index() {
         {/* navbar  */}
         <nav className={style["nav-bar"]} id="navbar">
           <ul className={style["nav-list"]}>
-            <li>
+            <li
+              className={
+                activeSection === "welcome-section" ? style.active : ""
+              }
+            >
               <a href="#welcome-section">Home</a>
             </li>
-            <li>
+            <li className={activeSection === "about" ? style.active : ""}>
               <a href="#about">About </a>
             </li>
-            <li>
+            <li className={activeSection === "projects" ? style.active : ""}>
               <a href="#projects">Projects</a>
             </li>
-            <li>
+            <li className={activeSection === "contact" ? style.active : ""}>
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -87,7 +109,6 @@ function index() {
         <div className={style["divider-button-container"]}>
           <hr className={style["contact-divider"]} />
           <a href="#welcome-section" className={style["up-button"]}>
-            {/* <i class="fa-solid fa-up-long">Up</i> */}
             <i className={`${style["fa-solid"]} ${style["fa-up-long"]}`}>Up</i>
           </a>
         </div>
@@ -95,10 +116,8 @@ function index() {
           <a
             href="https://www.linkedin.com/in/phonenaing/"
             target="_blank"
-            // className={`style["btn contact-details"]`}
             className={`${style.btn} ${style["contact-details"]}`}
           >
-            {/* <i className={style["fa-brands fa-linkedin"]}></i> Linkedin */}
             <i className={`${style["fa-brands"]} ${style["fa-linkedin"]}}`}></i>
             LinkedIn
           </a>
@@ -106,10 +125,8 @@ function index() {
             id="profile-link"
             href="https://github.com/mgphone"
             target="_blank"
-            // className={style["btn contact-details"]}
             className={`${style.btn} ${style["contact-details"]}`}
           >
-            {/* <i className={style["fab fa-github"]}></i> GitHub */}
             <i className={`${style.fab} ${style["fa-github"]}`}></i> GitHub
           </a>
 

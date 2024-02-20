@@ -2,6 +2,13 @@
   /* background-color: yellow; */
 }
 
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  color: black;
+
+}
+
 .animated-background {
   width: 100%;
   height: 100%;
