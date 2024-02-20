@@ -239,9 +239,11 @@
 }
 
 /* contact section */
-#contact {
+.contact {
   width: 100vw;
   height: 100vh;
+  padding-top: 10vh;
+  /* background-color: yellow; */
 }
 
 .contact-header {
