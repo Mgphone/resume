@@ -1,16 +1,17 @@
-*{
-  box-sizing: border-box;
+.page-wrapper {
+  /* background-color: yellow; */
 }
 
-/* animatate background */
-body{
-  margin:0;
-  padding:0;
-  /* overflow: hidden; */
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  color: black;
+
 }
+
 .animated-background {
   width: 100%;
-  height:100%;
+  height: 100%;
   background: linear-gradient(45deg, #3498db, #e74c3c);
   animation: gradientAnimation 5s infinite alternate;
 }
@@ -19,10 +20,12 @@ body{
   0% {
     background: linear-gradient(45deg, #3498db, #e74c3c);
   }
+
   100% {
     background: linear-gradient(45deg, #e74c3c, #3498db);
   }
 }
+
 /*button from welcome-section*/
 .button {
   display: inline-block;
@@ -40,6 +43,7 @@ body{
   color: #ffffff;
   text-decoration: none;
 }
+
 .button:hover,
 .button:focus {
   border: 1px solid #906464;
@@ -50,6 +54,7 @@ body{
   color: #ffffff;
   text-decoration: none;
 }
+
 .button:active {
   background: #735050;
   background: -webkit-gradient(linear, left top, left bottom, from(#735050), to(#735050));
@@ -66,8 +71,8 @@ body{
   height: 100vh;
   background: linear-gradient(45deg, #3498db, #e74c3c);
   animation: gradientAnimation 5s infinite alternate;
-  margin:0;
-  padding:0; 
+  margin: 0;
+  padding: 0;
 }
 
 .welcome-content {
@@ -76,16 +81,18 @@ body{
   text-align: center;
   padding: 3rem 0;
   margin: 13vh auto;
-  margin:auto;
+  margin: auto;
   line-height: 2vh;
 
 }
-.welcome-content h1{
+
+.welcome-content h1 {
   font-size: 3rem;
 }
-.welcome-content h2{
 
-  margin:5vh auto;
+.welcome-content h2 {
+
+  margin: 5vh auto;
 }
 
 
@@ -96,12 +103,12 @@ body{
   display: flex;
   justify-content: left;
   align-items: center;
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
-  margin:0;
+  margin: 0;
 
-  
+
   /* position:fixed; */
 }
 
@@ -110,12 +117,14 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
-  align-items: center; /* Vertically align the list items */
-  
+  align-items: center;
+  /* Vertically align the list items */
+
 }
 
 .nav-list li {
-  margin: 0 2vw; /* Using vw for the margin */
+  margin: 0 2vw;
+  /* Using vw for the margin */
   text-transform: uppercase;
 }
 
@@ -130,18 +139,19 @@ body{
 .nav-list a:hover {
   color: #e6f7df;
 }
+
 /* about me */
-.about-me{
+.about-me {
   display: flex;
   height: 100vh;
   width: 100vw;
-  
+
 }
 
-.about-content{
-  
+.about-content {
+
   width: 80%;
-  margin: 20vh auto;  
+  margin: 20vh auto;
   text-align: center;
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -152,13 +162,14 @@ body{
 }
 
 /* projects */
-#projects {
- text-align: center;
+.projects {
+  text-align: center;
   width: 100vw;
 
-  
+
 }
-.projects h2{
+
+.projects h2 {
   display: inline-block;
   font-size: 2rem;
   margin-top: 18vh;
@@ -170,11 +181,8 @@ body{
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 5vw;
   width: 90%;
-
-  margin:0 auto;
+  margin: 0 auto;
   padding: 3vw
-  
-  
 }
 
 .project-article {
@@ -186,59 +194,91 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100%; 
+  height: 100%;
 }
-.project-article span {
+
+.language {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+  gap: 5px;
+
+}
+
+.project-article .language span {
   padding: 5px 10px;
   border-radius: 5px;
   text-transform: uppercase;
-  font-variant: small-caps; 
-  font-weight: bold; 
-  letter-spacing: 1px; 
+  font-variant: small-caps;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #28a745;
+  margin: 0;
 }
-.project-article img{
+
+.language span:hover {
+  background-color: black;
+  color: white;
+}
+
+.project-article img {
   width: 100%;
-  height:50%;
+  height: 50%;
 }
+
+/* .project-article p {} */
 
 .project-article p a {
-
+  padding: 5px 10px;
+  /* margin-right: 3vw; */
   text-decoration: none;
-  color: #28abad;
+  background-color: #28abad;
+  font-size: large;
+  font-weight: bold;
+  margin: 0 1vw;
+  border-radius: 5%;
 }
-.language span{
-  margin-right: 1vw;
-}
-.project-article p a:hover {
 
+
+.project-article p a:hover {
   text-decoration: underline;
+  background-color: black;
+  color: white;
 }
+
 /* contact section */
-#contact{
+.contact {
   width: 100vw;
   height: 100vh;
+  padding-top: 10vh;
+  /* background-color: yellow; */
 }
-.contact-header{ 
+
+.contact-header {
   width: 80%;
- margin:0 auto;
- padding-top: 10vh;
-  
+  margin: 0 auto;
+  padding-top: 10vh;
+
   text-align: center;
   background-color: #f8f8f8;
   border-radius: 10px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); 
-    
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
 }
+
 .contact-header h2 {
   font-size: 2rem;
-  color: #333; /* Dark gray or black */
+  color: #333;
+  /* Dark gray or black */
 }
 
 .contact-header p {
   font-size: 1.6rem;
-  color: #101d8e; /* Medium gray */
-font-variant: small-caps;
+  color: #101d8e;
+  /* Medium gray */
+  font-variant: small-caps;
 }
+
 .divider-button-container {
   display: flex;
   flex-direction: column;
@@ -261,17 +301,19 @@ font-variant: small-caps;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
-  margin-top: 10px; /* Add some spacing between the hr and button */
+  margin-top: 10px;
+  /* Add some spacing between the hr and button */
 }
 
 .up-button:hover {
   background-color: #0056b3;
 }
+
 .mylink {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
-  
+
 }
 
 .contact-links {
@@ -302,37 +344,13 @@ font-variant: small-caps;
 
 /* Extra small devices (phones, 600px and down) */
 @media (min-width:360px) and (max-width:599px) {
- body{
-  font-size: 40%;
- }
- .nav-list a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  transition: color 0.3s ease-in-out;
-  font-size: 5vw;
-}
+
+  .nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 5vw;
+  }
 
 }
-@media only screen and (max-width: 600px) {
-  body{font-size: 60%;}
-  }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  body{font-size: 70%;}
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
- body{ font-size: 80%;}
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media  (min-width: 992px) {
-  body{
-    font-size: 90%;
-  }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) {
- 
-  }
