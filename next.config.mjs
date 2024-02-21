@@ -1,9 +1,7 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-
-  // Add basePath
   basePath: "/resume",
+  output: "export",
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;
