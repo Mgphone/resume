@@ -1,7 +1,24 @@
 /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   output: "export",
+//   reactStrictMode: true,
+// };
+
+// export default nextConfig;
+// next.config.js
+
 const nextConfig = {
-  output: "export",
+  // Other configurations...
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      "/@": { page: "/" },
+    };
+  },
+
   reactStrictMode: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
