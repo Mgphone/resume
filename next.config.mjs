@@ -1,10 +1,10 @@
-/** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   output: "export",
-//   reactStrictMode: true,
-// };
+// /** @type {import('next').NextConfig} */
+const nextConfig = {
+  // output: "export",
+  reactStrictMode: true,
+};
 
-// export default nextConfig;
+export default nextConfig;
 // next.config.js
 
 // const nextConfig = {
@@ -25,24 +25,24 @@
 
 // next.config.js
 
-/**
- * @type {import('next').NextConfig}
- */
-const nextConfig = {
-  // Specify the export target
-  target: "experimental-serverless-trace",
+// /**
+//  * @type {import('next').NextConfig}
+//  */
+// const nextConfig = {
+//   // Specify the export target
+//   target: "experimental-serverless-trace",
 
-  // Specify the output directory
-  outDir: "public",
+//   // Specify the output directory
+//   outDir: "public",
 
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  // trailingSlash: true,
+//   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+//   // trailingSlash: true,
 
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-  // skipTrailingSlashRedirect: true,
+//   // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
+//   // skipTrailingSlashRedirect: true,
 
-  // Optional: Change the output directory `out` -> `dist`
-  // distDir: 'dist',
-};
+//   // Optional: Change the output directory `out` -> `dist`
+//   // distDir: 'dist',
+// };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
