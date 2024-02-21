@@ -23,11 +23,17 @@
 
 // module.exports = nextConfig;
 
+// next.config.js
+
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  output: "export",
+  // Specify the export target
+  target: "experimental-serverless-trace",
+
+  // Specify the output directory
+  outDir: "public",
 
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
