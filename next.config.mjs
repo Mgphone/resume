@@ -1,7 +1,5 @@
-const nextConfig = {
-  basePath: "/resume",
-  output: "export",
-  reactStrictMode: true,
+module.exports = {
+  async rewrites() {
+    return [{ source: "/:any*", destination: "/" }];
+  },
 };
-
-module.exports = nextConfig;
