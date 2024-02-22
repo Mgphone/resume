@@ -3,6 +3,7 @@ import style from "../styles/Index.module.css";
 import data from "../data/data.json";
 function index() {
   const [activeSection, setActiveSection] = useState("");
+  const [userClickData, setUserCLickData] = useState("");
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -21,8 +22,38 @@ function index() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const handleClick = (title) => {
+    console.log("This is item: " + title);
+    const dataTile = data.find((item) => item.title === title);
+    // console.log("This is dataTile" + JSON.stringify(dataTile));
+    if (dataTile) {
+      setUserCLickData(dataTile.project_details);
+    }
+  };
+
+  console.log("This is userData" + JSON.stringify(userClickData));
+
   return (
     <div className={style["page-wrapper"]}>
+      {userClickData && (
+        <>
+          <div className={style.userclickdata}>
+            <div className={style["userclickdata-article"]}>
+              <p className={style.close}>X</p>
+              {userClickData.map((item, index) => (
+                <div key={index}>
+                  {Object.entries(item).map(([key, value]) => (
+                    <p key={key}>
+                      {/* <span>{key.toUpperCase() + " "}</span> */}
+                      <span>{value}</span>
+                    </p>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
       <section id="welcome-section" className={style["welcome-section"]}>
         <div className={style["welcome-content"]}>
           <h1>Phone Myint Naing</h1>
@@ -75,30 +106,40 @@ function index() {
       <section id="projects" className={style.projects}>
         <h1>Some of My Projects</h1>
         <div className={style["projects-content"]}>
-          {data.map((item) => (
-            <div className={style["project-article"]} key={item.id}>
-              <h3 className={style["project-tile"]}>{item.title}</h3>
-              <img src={item.img} alt={item.title} />
-              <h4>Languages</h4>
-              <p className={style.language}>
-                {item.language.map((item, index) => (
-                  <span key={index}>{item}</span>
-                ))}
-              </p>
-              <p>
-                <span>
-                  <a href={item.weblink} target="_blank">
-                    Link For Web
-                  </a>
-                </span>
-                <span>
-                  <a href={item.sourcecode} target="_blank">
-                    Source Code
-                  </a>
-                </span>
-              </p>
-            </div>
-          ))}
+          {data
+            .sort((a, b) => b.id - a.id)
+            .map((item) => (
+              <div className={style["project-article"]} key={item.id}>
+                <button
+                  className={style["project-link"]}
+                  onClick={() => handleClick(item.title)}
+                >
+                  <h3 className={style["project-tile"]}>{item.title}</h3>
+                  <img src={item.img} alt={item.title} />
+                  <h4>Languages</h4>
+                  <p className={style.language}>
+                    {item.language.map((item, index) => (
+                      <span key={index}>{item}</span>
+                    ))}
+                  </p>
+                  <p>
+                    <span>
+                      <a href={item.weblink} target="_blank">
+                        Link For Web
+                      </a>
+                    </span>
+                    <span>
+                      <a href={item.sourcecode} target="_blank">
+                        Source Code
+                      </a>
+                    </span>
+                  </p>
+                </button>
+                <button onClick={() => handleClick(item.title)}>
+                  Details Projects
+                </button>
+              </div>
+            ))}
         </div>
       </section>
       <section id="contact" className={style["contact"]}>
