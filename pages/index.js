@@ -23,7 +23,7 @@ function index() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const handleClick = (title) => {
-    console.log("This is item: " + title);
+    // console.log("This is item: " + title);
     const dataTile = data.find((item) => item.title === title);
     // console.log("This is dataTile" + JSON.stringify(dataTile));
     if (dataTile) {
@@ -33,7 +33,7 @@ function index() {
   const handleClose = () => {
     setUserCLickData(null);
   };
-  console.log("This is userData" + JSON.stringify(userClickData));
+  // console.log("This is userData" + JSON.stringify(userClickData));
 
   return (
     <div className={style["page-wrapper"]}>
