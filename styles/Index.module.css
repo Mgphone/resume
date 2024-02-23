@@ -247,6 +247,7 @@
   display: inline-block;
   font-size: 2rem;
   margin-top: 18vh;
+  margin-bottom: 3vh;
 }
 
 
@@ -292,9 +293,10 @@
 
 }
 
-.language span:hover {
-  background-color: black;
-  color: white;
+.language span:hover,
+.project-article button:hover {
+  background-color: white;
+  color: black;
 }
 
 .project-article img {

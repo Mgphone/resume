@@ -30,7 +30,9 @@ function index() {
       setUserCLickData(dataTile.project_details);
     }
   };
-
+  const handleClose = () => {
+    setUserCLickData(null);
+  };
   console.log("This is userData" + JSON.stringify(userClickData));
 
   return (
@@ -39,7 +41,9 @@ function index() {
         <>
           <div className={style.userclickdata}>
             <div className={style["userclickdata-article"]}>
-              <p className={style.close}>X</p>
+              <p t className={style.close} onClick={handleClose}>
+                X
+              </p>
               {userClickData.map((item, index) => (
                 <div key={index}>
                   {Object.entries(item).map(([key, value]) => (
