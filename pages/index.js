@@ -62,6 +62,15 @@ function index() {
         <div className={style["welcome-content"]}>
           <h1>Phone Myint Naing</h1>
           <h2>"Passionate Self-Taught Web Developer"</h2>
+          <h4>
+            {" "}
+            <a
+              href="https://drive.google.com/file/d/1wvcaJSrcKMQ2_H0teHY0ZOFxIR7gcHGU/view?usp=sharing"
+              target="_blank"
+            >
+              VIEW CV
+            </a>
+          </h4>
           <a className={style.button} href="#about">
             About Me!
           </a>
@@ -108,7 +117,7 @@ function index() {
         </div>
       </section>
       <section id="projects" className={style.projects}>
-        <h1>Some of My Projects</h1>
+        <h1>SOME OF MY PROJECTS</h1>
         <div className={style["projects-content"]}>
           {data
             .sort((a, b) => b.id - a.id)
@@ -139,8 +148,11 @@ function index() {
                     </span>
                   </p>
                 </button>
-                <button onClick={() => handleClick(item.title)}>
-                  Details Projects
+                <button
+                  className={style.buttonprojectdescription}
+                  onClick={() => handleClick(item.title)}
+                >
+                  Project Details
                 </button>
               </div>
             ))}
