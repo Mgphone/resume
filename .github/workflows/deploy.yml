@@ -17,10 +17,12 @@ jobs:
       - name: Build
         run: npm run build || yarn build
 
-      - name: Archive artifacts
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
+     - name: Archive artifact
+  run: |
+    cp ./out/index.html artifact.html
+  with:
+    path: artifact.html
+
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
