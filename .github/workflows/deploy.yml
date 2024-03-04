@@ -17,11 +17,19 @@ jobs:
       - name: Build
         run: npm run build || yarn build
 
-     - name: Archive artifact
-  run: |
-    cp ./out/index.html artifact.html
-  with:
-    path: artifact.html
+ - name: Verify out directory
+        run: |
+          ls -l
+          if [ ! -d "out" ]; then
+            echo "Error: 'out' directory not found"
+            exit 1
+          fi
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: built-files
+          path: ./out
 
 
       - name: Deploy to GitHub Pages
