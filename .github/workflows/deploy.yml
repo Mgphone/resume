@@ -23,12 +23,6 @@ jobs:
       - name: Build
         run: npm run build || yarn build
 
-      - name: Archive artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: built-files
-          path: ./out
-
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
