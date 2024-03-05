@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [nextjsfromstart]
+    branches:
+      - nextjsfromstart
 
 jobs:
   build-and-deploy:
@@ -17,20 +18,11 @@ jobs:
       - name: Build
         run: npm run build || yarn build
 
- - name: Verify out directory
-        run: |
-          ls -l
-          if [ ! -d "out" ]; then
-            echo "Error: 'out' directory not found"
-            exit 1
-          fi
-
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
           name: built-files
           path: ./out
-
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
