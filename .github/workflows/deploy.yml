@@ -27,9 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          stale: true # Removes old deployment on branch
+          token: ${{ github.token }}
 
 env:
   GITHUB_PAGES: true
