@@ -1,4 +1,6 @@
-export default {
-  // ... other configurations
-  output: "export",
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
 };
+
+export default nextConfig;
