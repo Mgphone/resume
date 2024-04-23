@@ -65,7 +65,7 @@ function index() {
           <h4>
             {" "}
             <a
-              href="https://drive.google.com/file/d/1xQxWSqgXUuzfiEvwzNK0Ol-0FeERDIdn/view?usp=sharing"
+            href="https://drive.google.com/file/d/1xWrppy2hjONV3mYi0onRbU-ULJ1BfVcV/view?usp=sharing"
               target="_blank"
             >
               VIEW CV
