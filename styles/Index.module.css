@@ -57,8 +57,12 @@
 
 
 .userclickdata-article p {
-  font-weight: bold;
   margin: 0;
+  color: #333;
+}
+
+.userclickdata-article>div p:first-child span:first-child {
+  font-weight: bold;
 }
 
 .userclickdata-article>div:nth-child(2) p:first-child span:first-child {
@@ -259,6 +263,17 @@
   margin-bottom: 3vh;
 }
 
+.projects h3 {
+  margin: 10px 0;
+  background-color: #ccc;
+  border-radius: 5%;
+}
+
+.projects h3:hover {
+  color: black;
+  background-color: #999;
+}
+
 
 .projects-content {
   display: grid;
@@ -453,5 +468,8 @@
     transition: color 0.3s ease-in-out;
     font-size: 5vw;
   }
+
+
+
 
 }

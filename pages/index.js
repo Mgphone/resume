@@ -65,7 +65,7 @@ function index() {
           <h4>
             {" "}
             <a
-            href="https://drive.google.com/file/d/1xWrppy2hjONV3mYi0onRbU-ULJ1BfVcV/view?usp=sharing"
+              href="https://drive.google.com/file/d/1xWrppy2hjONV3mYi0onRbU-ULJ1BfVcV/view?usp=sharing"
               target="_blank"
             >
               VIEW CV
@@ -129,7 +129,7 @@ function index() {
                 >
                   <h3 className={style["project-tile"]}>{item.title}</h3>
                   <img src={item.img} alt={item.title} />
-                  <h4>Languages</h4>
+                  <h5>Languages and FrameWorks</h5>
                   <p className={style.language}>
                     {item.language.map((item, index) => (
                       <span key={index}>{item}</span>

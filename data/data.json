@@ -195,5 +195,48 @@
 				}
 		]
 		
-	}
+	},{
+		"id": 7,
+		"title": "Money Exchange",
+		"img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1718481225/Porfolio/Screenshot_2024-06-15_203640.png",
+		"language": [
+				"NodeJS",
+				"React",
+				"Javascript",
+				"Vite",
+				"Docker",
+				"Axios",
+				"Recharts",
+				"Formik",
+				"API",
+				"GIT",
+				"MongoDB",
+				"Vercel",
+				"Express",
+				"JWT"
+				
+		],
+		"weblink": "https://super-market-frontend.vercel.app/",
+		"sourcecode": "https://github.com/Mgphone/SuperMarketBE",
+		"project_details": [
+    {
+        "title": "Money Exchange",
+        "description": "A complete-stack internet application constructed for money exchange offerings in Thailand the use of Node.Js, React, JavaScript, MongoDB, Git, Vercel, and APIs carried out with Express and Axios. Recharts frameworks are used for records visualization."
+    },
+    {
+        "title": "User Groups",
+        "description": "There are Three forms of person organisations: Area Manager, Branch Manager, and Team Seller. Each institution has unique talents tailor-made to their roles. Area Managers can control groups and members, create charge collections, and day by day income operations. Branch Managers can manage crew sellers, conduct income transactions with clients, and keep branch-unique operations. Team Sellers attention on selling with the transactions beneath the steering of department managers."
+    },
+    {
+        "title": "Admin Dashboard",
+        "description": "The admin dashboard gives comprehensive information visualization the use of graphs, charts, and pie charts. Area Managers have get entry to to all sales statistics and performance metrics, whilst Branch Managers can view income information and control branch-unique operations"
+    },
+    {
+        "title": "Sales Management",
+        "description": "Area Managers and Branch Managers could make daily income, reset income, and make certain up-to-date operations. The machine helps specified monitoring and management of sales activities, ensuring efficient operation and correct file-retaining."
+    }
+]
+
+	
+}
 ]
