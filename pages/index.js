@@ -106,9 +106,8 @@ function index() {
           </p>
           <p>
             My passion lies in creating dynamic web experiences. I'm skilled in
-            JavaScript, HTML, CSS, React, MongoDB, and Git, with additional
-            expertise in Node.js, Express.js, JWT (JSON Web Tokens), and
-            Next.js.
+            JavaScript, Typescript, React, MongoDB, and Git, with additional
+            expertise in Node.js, Docker, and Tailwind CSS.
           </p>
           <p>
             Let's bring your ideas to life and build exceptional web solutions
@@ -123,33 +122,47 @@ function index() {
             .sort((a, b) => b.id - a.id)
             .map((item) => (
               <div className={style["project-article"]} key={item.id}>
+                {/* Project Card */}
+                <div className={style["project-card"]}>
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className={style["project-img"]}
+                  />
+                  <div className={style["project-info"]}>
+                    <h3 className={style["project-title"]}>{item.title}</h3>
+                    <h5 className={style["project-languages"]}>
+                      Languages and Frameworks
+                    </h5>
+                    <div className={style.language}>
+                      {item.language.map((lang, index) => (
+                        <span key={index} className={style["language-tag"]}>
+                          {lang}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                {/* Links */}
+                <div className={style["project-links"]}>
+                  <a
+                    href={item.weblink}
+                    target="_blank"
+                    className={style["project-link"]}
+                  >
+                    Link For Web
+                  </a>
+                  <a
+                    href={item.sourcecode}
+                    target="_blank"
+                    className={style["project-link"]}
+                  >
+                    Source Code
+                  </a>
+                </div>
+                {/* Details Button */}
                 <button
-                  className={style["project-link"]}
-                  onClick={() => handleClick(item.title)}
-                >
-                  <h3 className={style["project-tile"]}>{item.title}</h3>
-                  <img src={item.img} alt={item.title} />
-                  <h5>Languages and FrameWorks</h5>
-                  <p className={style.language}>
-                    {item.language.map((item, index) => (
-                      <span key={index}>{item}</span>
-                    ))}
-                  </p>
-                  <p>
-                    <span>
-                      <a href={item.weblink} target="_blank">
-                        Link For Web
-                      </a>
-                    </span>
-                    <span>
-                      <a href={item.sourcecode} target="_blank">
-                        Source Code
-                      </a>
-                    </span>
-                  </p>
-                </button>
-                <button
-                  className={style.buttonprojectdescription}
+                  className={style["button-project-description"]}
                   onClick={() => handleClick(item.title)}
                 >
                   Project Details
@@ -158,6 +171,7 @@ function index() {
             ))}
         </div>
       </section>
+
       <section id="contact" className={style["contact"]}>
         <div className={style["contact-header"]}>
           <h2>Contact</h2>
