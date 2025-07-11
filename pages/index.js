@@ -65,7 +65,7 @@ function index() {
           <h4>
             {" "}
             <a
-              href="https://drive.google.com/file/d/1xWrppy2hjONV3mYi0onRbU-ULJ1BfVcV/view?usp=sharing"
+              href="https://drive.google.com/file/d/1QX5CYh1e4nAbWEJYUTTNDM6HILXhEDUu/view?usp=sharing"
               target="_blank"
             >
               VIEW CV
@@ -152,13 +152,15 @@ function index() {
                   >
                     Link For Web
                   </a>
-                  <a
-                    href={item.sourcecode}
-                    target="_blank"
-                    className={style["project-link"]}
-                  >
-                    Source Code
-                  </a>
+                  {item.sourcecode && (
+                    <a
+                      href={item.sourcecode}
+                      target="_blank"
+                      className={style["project-link"]}
+                    >
+                      Source Code
+                    </a>
+                  )}
                 </div>
                 {/* Details Button */}
                 <button

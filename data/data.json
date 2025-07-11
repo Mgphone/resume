@@ -1,242 +1,284 @@
 [
-	{
-			"id": 1,
-			"title": "Tributes Page",
-			"img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1693084509/Porfolio/tribute_ymrzlb.png",
-			"language": [
-					"HTML",
-					"CSS"
-			],
-			"weblink": "https://codepen.io/mgphone/details/zYvJPva ",
-			"sourcecode": "https://codepen.io/mgphone/pen/zYvJPva",
-			"project_details":[{
-				"title":" Responsive Portfolio Website",
-				"description":"Created a responsive portfolio website using HTML and CSS. Implemented modern design principles and techniques to ensure optimal viewing experience across various devices. Utilized flexbox and media queries for layout responsiveness. Incorporated CSS animations and transitions for enhanced user interaction and visual appeal."
-				}]
-	},
-	{
-			"id": 2,
-			"title": "Black Jack",
-			"img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1695536755/Porfolio/Screenshot_2023-09-24_071827_si7wyy.png",
-			"language": [
-					"Javascript",
-					"DOM",
-					"HTML",
-					"CSS"
-			],
-			"weblink": "https://mgphone.w3spaces.com/",
-			"sourcecode": "https://github.com/Mgphone/casinowar/tree/main/BlackJack",
-			"project_details":[{
-				"title":"Blackjack Implementation: ",
-				"description":"Developed a fully functional Blackjack game using HTML, CSS, and JavaScript, with a focus on JavaScript for implementing game logic."
-				},{
-					"title":"Five-Card Charlie Variant:",
-					"description":" Introduced the Five-Card Charlie rule, enhancing gameplay complexity and excitement while showcasing proficiency in JavaScript programming."
-				},{
-					"title":"Responsive Design:",
-					"description":"Ensured seamless user experience across various devices by implementing responsive design principles using HTML and CSS."
-				},{
-					"title":"Interactive Gameplay:",
-					"description":"Utilized JavaScript and DOM manipulation to create an interactive and intuitive user interface, allowing players to make informed decisions during gameplay."
-				}
-			]
-	},
-	{
-			"id": 3,
-			"title": "Cocktail Search",
-			"img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1693074975/Porfolio/cocktail_my8gfw.png",
-			"language": [
-					"API",
-					"React",
-					"Javascript",
-					"HTML",
-					"CSS"
-			],
-			"weblink": "https://mgphonecocktails.netlify.app/",
-			"sourcecode": "https://github.com/Mgphone/mgphonecocktail",
-			"project_details": [
-				{
-						"title": "Cocktail Search and Randomizer Web App",
-						"description": "A fully functional web application where users can search for cocktails and generate random cocktails. Built using HTML, CSS, JavaScript, React, and API calls."
-				},
-				{
-						"title": "Search Functionality",
-						"description": "Implemented a search functionality allowing users to search for cocktails by name. As the user types in the search bar, the list of cocktails dynamically updates to display similar cocktails. Utilized DOM manipulation, JavaScript, and React for real-time updates without the need for page refresh."
-				},
-				{
-						"title": "Cocktail Details",
-						"description": "Developed functionality to display detailed information about selected cocktails upon user interaction. When a user clicks on a cocktail from the search results, the app retrieves and displays details such as the cocktail name, glass type, and ingredients. Leveraged RESTful API calls, JavaScript, and React to fetch and render the cocktail details dynamically."
-				},
-				{
-						"title": "Random Cocktail Generator",
-						"description": "Implemented a feature to generate a random cocktail at the click of a button. Upon clicking the 'Lucky Draw' button, the app selects a random cocktail from the available database and displays its details to the user. Utilized JavaScript for handling the randomization process, DOM manipulation, and React to update the UI accordingly."
-				}
-		]
-	}
-		,
-	{
-			"id": 4,
-			"title": "Restaurant",
-			"img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1697717755/Porfolio/Screenshot_2023-10-19.png",
-			"language": [
-					"React",
-					"Javascript",
-					"API",
-					"GIT",
-					"HTML",
-					"CSS",
-					"Google Map API"
-			],
-			"weblink": "https://asia-villa.co.uk/",
-			"sourcecode": "https://github.com/Mgphone/AsiaReact",
-			"project_details": [
-				{
-						"title": "Restaurant Menu with Responsive Design",
-						"description": "A web application allowing users to view the restaurant menu with responsive design. Users can access the menu using various devices. Built using HTML, CSS, JavaScript, React, and Cloudinary for image hosting."
-				},
-				{
-						"title": "Vegan Options",
-						"description": "Implemented functionality for users to view vegan options on the menu. Users can easily identify vegan dishes, promoting inclusivity and catering to dietary preferences."
-				},
-				{
-						"title": "Full Menu",
-						"description": "Provided a comprehensive view of the full menu, including all available dishes and beverages. Users can browse through different categories and items to make informed decisions."
-				},
-				{
-						"title": "Location and Ordering",
-						"description": "Integrated Google Maps API to display the restaurant's location. Users can view the restaurant's proximity to their current location and access directions. Additionally, users can link to the order website to place orders directly."
-				},
-				{
-						"title": "Dynamic Opening and Closing Time",
-						"description": "Implemented dynamic opening and closing time functionality to reflect the current operating hours of the restaurant. Users can see real-time updates on whether the restaurant is open or closed."
-				},
-				{
-						"title": "Nearest Location List",
-						"description": "Utilized Google Maps API to generate a list of nearby restaurant locations based on the user's current location. Users outside the radius cannot view restaurants, ensuring relevance and accuracy."
-				}
-		]
-		
-	},
-	{
-			"id": 5,
-			"title": "E-commerce",
-			"img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1693074975/Porfolio/crubasia_meiv66.png",
-			"language": [
-					"NodeJS",
-					"MongoDB",
-					"JWT",
-					"Express",
-					"HTML",
-					"CSS",
-					"Javascript",
-					"EJS",
-					"Cloudinary",
-					"ONRENDER",
-					"Netlify"
-			],
-			"weblink": "https://mgphoneshopping.onrender.com/",
-			"sourcecode": "https://github.com/Mgphone/-asiacart-",
-			"project_details": [
-				{
-						"title": "Full Stack E-commerce Website",
-						"description": "A full-stack e-commerce website built using HTML, CSS, JavaScript, EJS, Node.js, Express, Passport, Bcrypt, Cloudinary, and MongoDB. Deployed on OnRender for both frontend and backend."
-				},
-				{
-						"title": "User Authentication",
-						"description": "Implemented user authentication using Passport.js and Bcrypt. User passwords are securely hashed and stored in MongoDB. Sessions are managed using cookie memory store for later authentication."
-				},
-				{
-						"title": "User Privileges",
-						"description": "Designed two user roles: user and admin. Users can add, remove, and clear items from their shopping cart, search items by category, and make purchases. Admins have additional privileges to manage products, categories, and announcements."
-				},
-				{
-						"title": "Admin Features",
-						"description": "Admins can add new items with different categories and price tags, edit item details including images and categories, and manage stock quantities. Additionally, admins can create new announcement pages for future development."
-				}
-		]
-	},
-	{
-			"id": 6,
-			"title": "Removal Company",
-			"img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1707268549/Porfolio/TurboRemoval.jpg",
-			"language": [
-					"NodeJS",
-					"React",
-					"Javascript",
-					"API",
-					"GIT",
-					"MongoDB",
-					"HTML",
-					"CSS",
-					"Google Map API",
-					"Express",
-					"JWT",
-					"ONRENDER",
-					"Netlify","Stripe"
-			],
-			"weblink": "https://turboremovals.co.uk/",
-			"sourcecode": "https://github.com/Mgphone/TurboRemoval",
-			"project_details": [
-				{
-						"title": "Turbo Removal Service",
-						"description": "A full-stack web application built for a removal service company using Node.js, React, JavaScript, APIs, Git, MongoDB, HTML, CSS, Google Maps API, Express, JWT, GCP App Engine, Stripe API payment, OnRender, and Netlify."
-					},
-				{
-						"title": "Admin Features",
-						"description": "Admins can register with a unique code and use JWT and Bcrypt with cookie local storage for session management. Once logged in, admins can view past, current, and future user quotations and bookings. Admins have the ability to delete bookings and request reviews. Once a review is sent, the review button is disabled. Admins can send emails to users using Nodemailer with template emails, including a review link."
-				},
-				{
-						"title": "User Interaction",
-						"description": "The web design is responsive, allowing users to request quotations, retrieve quotations, and make bookings. Users input pickup and destination postcodes, validated using Google Places API. After validation, users can see estimated travel time calculated by the backend using geocode Google API. Users can add multiple stops, specify hours needed, van size, number of helpers, date, and time. Once satisfied, users can generate a free quote displaying the estimated cost, calculated on the backend. Users can choose to pay now using Stripe payment, with options for 100%, 50%, or 30% payment. Upon successful payment, both the user and server receive confirmation emails."
-				},
-				{
-						"title": "Unique Code and Quote Retrieval",
-						"description": "Both paid and saved quotes receive a unique code for retrieval. Users can use this code to view job details and pay outstanding balances if necessary. Unpaid quotes provide a Stripe payment option. Once payment is successful, confirmation emails are sent to both the user and server."
-				}
-		]
-		
-	},{
-		"id": 7,
-		"title": "Money Exchange",
-		"img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1718481225/Porfolio/Screenshot_2024-06-15_203640.png",
-		"language": [
-				"NodeJS",
-				"React",
-				"Javascript",
-				"Vite",
-				"Docker",
-				"Axios",
-				"Recharts",
-				"Formik",
-				"API",
-				"GIT",
-				"MongoDB",
-				"Vercel",
-				"Express",
-				"JWT"
-				
-		],
-		"weblink": "https://super-market-frontend.vercel.app/",
-		"sourcecode": "https://github.com/Mgphone/SuperMarketBE",
-		"project_details": [
-    {
+  {
+    "id": 1,
+    "title": "Tributes Page",
+    "img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1693084509/Porfolio/tribute_ymrzlb.png",
+    "language": ["HTML", "CSS"],
+    "weblink": "https://codepen.io/mgphone/details/zYvJPva ",
+    "sourcecode": "https://codepen.io/mgphone/pen/zYvJPva",
+    "project_details": [
+      {
+        "title": " Responsive Portfolio Website",
+        "description": "Created a responsive portfolio website using HTML and CSS. Implemented modern design principles and techniques to ensure optimal viewing experience across various devices. Utilized flexbox and media queries for layout responsiveness. Incorporated CSS animations and transitions for enhanced user interaction and visual appeal."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Black Jack",
+    "img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1695536755/Porfolio/Screenshot_2023-09-24_071827_si7wyy.png",
+    "language": ["Javascript", "DOM", "HTML", "CSS"],
+    "weblink": "https://mgphone.w3spaces.com/",
+    "sourcecode": "https://github.com/Mgphone/casinowar/tree/main/BlackJack",
+    "project_details": [
+      {
+        "title": "Blackjack Implementation: ",
+        "description": "Developed a fully functional Blackjack game using HTML, CSS, and JavaScript, with a focus on JavaScript for implementing game logic."
+      },
+      {
+        "title": "Five-Card Charlie Variant:",
+        "description": " Introduced the Five-Card Charlie rule, enhancing gameplay complexity and excitement while showcasing proficiency in JavaScript programming."
+      },
+      {
+        "title": "Responsive Design:",
+        "description": "Ensured seamless user experience across various devices by implementing responsive design principles using HTML and CSS."
+      },
+      {
+        "title": "Interactive Gameplay:",
+        "description": "Utilized JavaScript and DOM manipulation to create an interactive and intuitive user interface, allowing players to make informed decisions during gameplay."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cocktail Search",
+    "img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1693074975/Porfolio/cocktail_my8gfw.png",
+    "language": ["API", "React", "Javascript", "HTML", "CSS"],
+    "weblink": "https://mgphonecocktails.netlify.app/",
+    "sourcecode": "https://github.com/Mgphone/mgphonecocktail",
+    "project_details": [
+      {
+        "title": "Cocktail Search and Randomizer Web App",
+        "description": "A fully functional web application where users can search for cocktails and generate random cocktails. Built using HTML, CSS, JavaScript, React, and API calls."
+      },
+      {
+        "title": "Search Functionality",
+        "description": "Implemented a search functionality allowing users to search for cocktails by name. As the user types in the search bar, the list of cocktails dynamically updates to display similar cocktails. Utilized DOM manipulation, JavaScript, and React for real-time updates without the need for page refresh."
+      },
+      {
+        "title": "Cocktail Details",
+        "description": "Developed functionality to display detailed information about selected cocktails upon user interaction. When a user clicks on a cocktail from the search results, the app retrieves and displays details such as the cocktail name, glass type, and ingredients. Leveraged RESTful API calls, JavaScript, and React to fetch and render the cocktail details dynamically."
+      },
+      {
+        "title": "Random Cocktail Generator",
+        "description": "Implemented a feature to generate a random cocktail at the click of a button. Upon clicking the 'Lucky Draw' button, the app selects a random cocktail from the available database and displays its details to the user. Utilized JavaScript for handling the randomization process, DOM manipulation, and React to update the UI accordingly."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Restaurant",
+    "img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1697717755/Porfolio/Screenshot_2023-10-19.png",
+    "language": [
+      "React",
+      "Javascript",
+      "API",
+      "GIT",
+      "HTML",
+      "CSS",
+      "Google Map API"
+    ],
+    "weblink": "https://asia-villa.co.uk/",
+    "sourcecode": "https://github.com/Mgphone/AsiaReact",
+    "project_details": [
+      {
+        "title": "Restaurant Menu with Responsive Design",
+        "description": "A web application allowing users to view the restaurant menu with responsive design. Users can access the menu using various devices. Built using HTML, CSS, JavaScript, React, and Cloudinary for image hosting."
+      },
+      {
+        "title": "Vegan Options",
+        "description": "Implemented functionality for users to view vegan options on the menu. Users can easily identify vegan dishes, promoting inclusivity and catering to dietary preferences."
+      },
+      {
+        "title": "Full Menu",
+        "description": "Provided a comprehensive view of the full menu, including all available dishes and beverages. Users can browse through different categories and items to make informed decisions."
+      },
+      {
+        "title": "Location and Ordering",
+        "description": "Integrated Google Maps API to display the restaurant's location. Users can view the restaurant's proximity to their current location and access directions. Additionally, users can link to the order website to place orders directly."
+      },
+      {
+        "title": "Dynamic Opening and Closing Time",
+        "description": "Implemented dynamic opening and closing time functionality to reflect the current operating hours of the restaurant. Users can see real-time updates on whether the restaurant is open or closed."
+      },
+      {
+        "title": "Nearest Location List",
+        "description": "Utilized Google Maps API to generate a list of nearby restaurant locations based on the user's current location. Users outside the radius cannot view restaurants, ensuring relevance and accuracy."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "E-commerce",
+    "img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1693074975/Porfolio/crubasia_meiv66.png",
+    "language": [
+      "NodeJS",
+      "MongoDB",
+      "JWT",
+      "Express",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "EJS",
+      "Cloudinary",
+      "ONRENDER",
+      "Netlify"
+    ],
+    "weblink": "https://mgphoneshopping.onrender.com/",
+    "sourcecode": "https://github.com/Mgphone/-asiacart-",
+    "project_details": [
+      {
+        "title": "Full Stack E-commerce Website",
+        "description": "A full-stack e-commerce website built using HTML, CSS, JavaScript, EJS, Node.js, Express, Passport, Bcrypt, Cloudinary, and MongoDB. Deployed on OnRender for both frontend and backend."
+      },
+      {
+        "title": "User Authentication",
+        "description": "Implemented user authentication using Passport.js and Bcrypt. User passwords are securely hashed and stored in MongoDB. Sessions are managed using cookie memory store for later authentication."
+      },
+      {
+        "title": "User Privileges",
+        "description": "Designed two user roles: user and admin. Users can add, remove, and clear items from their shopping cart, search items by category, and make purchases. Admins have additional privileges to manage products, categories, and announcements."
+      },
+      {
+        "title": "Admin Features",
+        "description": "Admins can add new items with different categories and price tags, edit item details including images and categories, and manage stock quantities. Additionally, admins can create new announcement pages for future development."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Removal Company",
+    "img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1707268549/Porfolio/TurboRemoval.jpg",
+    "language": [
+      "NodeJS",
+      "React",
+      "Javascript",
+      "API",
+      "GIT",
+      "MongoDB",
+      "HTML",
+      "CSS",
+      "Google Map API",
+      "Express",
+      "JWT",
+      "ONRENDER",
+      "Netlify",
+      "Stripe"
+    ],
+    "weblink": "https://turboremovals.co.uk/",
+    "sourcecode": "https://github.com/Mgphone/TurboRemoval",
+    "project_details": [
+      {
+        "title": "Turbo Removal Service",
+        "description": "A full-stack web application built for a removal service company using Node.js, React, JavaScript, APIs, Git, MongoDB, HTML, CSS, Google Maps API, Express, JWT, GCP App Engine, Stripe API payment, OnRender, and Netlify."
+      },
+      {
+        "title": "Admin Features",
+        "description": "Admins can register with a unique code and use JWT and Bcrypt with cookie local storage for session management. Once logged in, admins can view past, current, and future user quotations and bookings. Admins have the ability to delete bookings and request reviews. Once a review is sent, the review button is disabled. Admins can send emails to users using Nodemailer with template emails, including a review link."
+      },
+      {
+        "title": "User Interaction",
+        "description": "The web design is responsive, allowing users to request quotations, retrieve quotations, and make bookings. Users input pickup and destination postcodes, validated using Google Places API. After validation, users can see estimated travel time calculated by the backend using geocode Google API. Users can add multiple stops, specify hours needed, van size, number of helpers, date, and time. Once satisfied, users can generate a free quote displaying the estimated cost, calculated on the backend. Users can choose to pay now using Stripe payment, with options for 100%, 50%, or 30% payment. Upon successful payment, both the user and server receive confirmation emails."
+      },
+      {
+        "title": "Unique Code and Quote Retrieval",
+        "description": "Both paid and saved quotes receive a unique code for retrieval. Users can use this code to view job details and pay outstanding balances if necessary. Unpaid quotes provide a Stripe payment option. Once payment is successful, confirmation emails are sent to both the user and server."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Money Exchange",
+    "img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1718481225/Porfolio/Screenshot_2024-06-15_203640.png",
+    "language": [
+      "NodeJS",
+      "React",
+      "Javascript",
+      "Vite",
+      "Docker",
+      "Axios",
+      "Recharts",
+      "Formik",
+      "API",
+      "GIT",
+      "MongoDB",
+      "Vercel",
+      "Express",
+      "JWT"
+    ],
+    "weblink": "https://super-market-frontend.vercel.app/",
+    "sourcecode": "https://github.com/Mgphone/SuperMarketBE",
+    "project_details": [
+      {
         "title": "Money Exchange",
         "description": "A complete-stack internet application constructed for money exchange offerings in Thailand the use of Node.Js, React, JavaScript, MongoDB, Git, Vercel, and APIs carried out with Express and Axios. Recharts frameworks are used for records visualization."
-    },
-    {
+      },
+      {
         "title": "User Groups",
         "description": "There are Three forms of person organisations: Area Manager, Branch Manager, and Team Seller. Each institution has unique talents tailor-made to their roles. Area Managers can control groups and members, create charge collections, and day by day income operations. Branch Managers can manage crew sellers, conduct income transactions with clients, and keep branch-unique operations. Team Sellers attention on selling with the transactions beneath the steering of department managers."
-    },
-    {
+      },
+      {
         "title": "Admin Dashboard",
         "description": "The admin dashboard gives comprehensive information visualization the use of graphs, charts, and pie charts. Area Managers have get entry to to all sales statistics and performance metrics, whilst Branch Managers can view income information and control branch-unique operations"
-    },
-    {
+      },
+      {
         "title": "Sales Management",
         "description": "Area Managers and Branch Managers could make daily income, reset income, and make certain up-to-date operations. The machine helps specified monitoring and management of sales activities, ensuring efficient operation and correct file-retaining."
-    }
-]
-
-	
-}
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "CityTouch",
+    "img": "https://res.cloudinary.com/dsigqr3ht/image/upload/v1752261559/Porfolio/Screenshot_2025-07-11_at_20.18.40.png",
+    "language": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "NodeJS",
+      "MongoDB",
+      "Docker",
+      "JWT",
+      "Cloudinary",
+      "Mapbox",
+      "Mapbox API",
+      "React Hook Form",
+      "Shadcn/UI",
+      "Vercel",
+      "Vercel Serverless Functions",
+      "Stripe",
+      "GIT"
+    ],
+    "weblink": "http://citytouchremovals.co.uk/",
+    "project_details": [
+      {
+        "title": "CityTouch Booking Platform",
+        "description": "CityTouch is a complete full-stack booking platform for transport and removal services in the UK. Users can select locations using Mapbox, choose the size of the van, receive a quotation, and book their move seamlessly online."
+      },
+      {
+        "title": "Location-Based Quotation System",
+        "description": "The system uses Mapbox API for address autocomplete and real driving distance calculations. Users can book moves from point A to point B, including optional via points. The distance and van size determine the dynamic price quotation."
+      },
+      {
+        "title": "Van Size Selection & Quotation",
+        "description": "Users can choose from different van sizes. The quotation is auto-generated based on location data and selected van size, then saved for admin review."
+      },
+      {
+        "title": "Admin Quotation Handling",
+        "description": "Admin receives quotation requests via the dashboard, can review submitted bookings, and respond with a final offer. All quotations are stored securely in MongoDB and accessible via the admin portal."
+      },
+      {
+        "title": "Contact & Enquiry Form",
+        "description": "Users can ask questions or send enquiries through the contact form. These messages are emailed directly to the admin’s inbox for real-time support."
+      },
+      {
+        "title": "Stripe Payment Integration",
+        "description": "Once a quotation is confirmed, users can proceed to book and pay using Stripe. All transactions are securely handled via Stripe’s checkout system."
+      },
+      {
+        "title": "Built with Modern Stack",
+        "description": "Developed using React, TypeScript, Tailwind CSS, Mapbox, and Vercel Functions. The frontend features a responsive multi-step form with React Hook Form, while backend logic is deployed via serverless functions for scalability."
+      }
+    ]
+  }
 ]
