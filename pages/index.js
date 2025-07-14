@@ -141,13 +141,23 @@ function index() {
                         </span>
                       ))}
                     </div>
+
+                    {/* Short Description (Preview) */}
+                    {item.project_details &&
+                      item.project_details[0]?.description && (
+                        <p className={style["project-description"]}>
+                          {item.project_details[0].description.slice(0, 100)}...
+                        </p>
+                      )}
                   </div>
                 </div>
+
                 {/* Links */}
                 <div className={style["project-links"]}>
                   <a
                     href={item.weblink}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className={style["project-link"]}
                   >
                     Link For Web
@@ -156,12 +166,14 @@ function index() {
                     <a
                       href={item.sourcecode}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className={style["project-link"]}
                     >
                       Source Code
                     </a>
                   )}
                 </div>
+
                 {/* Details Button */}
                 <button
                   className={style["button-project-description"]}

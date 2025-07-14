@@ -417,6 +417,14 @@
   transform: translateY(-3px);
   outline: none;
 }
+.project-description {
+  margin-top: 12px;
+  font-size: 0.95em;
+  color: #555;
+  text-align: center;
+  line-height: 1.4;
+}
+
 /* contact section */
 .contact {
   width: 100vw;
@@ -492,7 +500,9 @@
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex; /* better than inline-block for alignment */
+  justify-content: center; /* horizontal centering */
+  align-items: center; /* vertical centering */
   text-decoration: none;
   margin: 5px;
   padding: 8px 16px;
@@ -500,6 +510,7 @@
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
+  text-align: center; /* fallback for multiline */
 }
 
 .btn i {
