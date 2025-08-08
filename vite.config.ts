@@ -1,12 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 export default defineConfig({
+  base: "/resume/",
   plugins: [react()],
   server: {
     port: 3000,
-    open: true
+    open: true,
   },
   resolve: {
     alias: {
@@ -16,15 +17,15 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        entryFileNames: 'app.js',
-        chunkFileNames: '[name].js',
+        entryFileNames: "app.js",
+        chunkFileNames: "[name].js",
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name?.endsWith('.css')) {
-            return 'styles.css';
+          if (assetInfo.name?.endsWith(".css")) {
+            return "styles.css";
           }
-          return '[name][extname]';
-        }
-      }
-    }
-  }
-})
+          return "[name][extname]";
+        },
+      },
+    },
+  },
+});
