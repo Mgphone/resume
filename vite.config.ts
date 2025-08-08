@@ -13,4 +13,18 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'app.js',
+        chunkFileNames: '[name].js',
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name?.endsWith('.css')) {
+            return 'styles.css';
+          }
+          return '[name][extname]';
+        }
+      }
+    }
+  }
 })
