@@ -4,6 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  base: process.env.NODE_ENV === 'production' && process.env.VERCEL_URL ? '/' : '/resume/',
   server: {
     port: 3000,
     open: true,
